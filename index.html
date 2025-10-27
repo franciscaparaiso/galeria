@@ -3,170 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria Responsiva</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-            margin-bottom: 30px;
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .gallery {
-            display: grid;
-            gap: 15px;
-            grid-template-columns: 1fr;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            aspect-ratio: 1;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-        }
-
-        .gallery-item a {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .lightbox:target {
-            display: flex;
-        }
-
-        .lightbox-content {
-            max-width: 90%;
-            max-height: 90%;
-            position: relative;
-            animation: zoomIn 0.3s ease;
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        .lightbox-content img {
-            width: 100%;
-            height: 100%;
-            max-height: 85vh;
-            object-fit: contain;
-            border-radius: 8px;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: -50px;
-            right: 0;
-            background: white;
-            text-decoration: none;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: bold;
-            color: #333;
-            transition: background 0.3s ease;
-        }
-
-        .lightbox-close:hover {
-            background: #f0f0f0;
-        }
-
-        @media (max-width: 768px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            .lightbox-close {
-                width: 34px;
-                height: 35px;
-                font-size: 24px;
-                top: -45px;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            h1 {
-                font-size: 2.2rem;
-            }
-        }
-
-        @media (min-width: 1025px) {
-            .gallery {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <title>portefolio fotográfico</title>
+    
 </head>
 <body>
     <div class="container">
@@ -175,12 +14,12 @@
         <div class="gallery">
             <div class="gallery-item">
                 <a href="#img1">
-                    <img src=".img/Imagem WhatsApp 2025-10-03 às 18.55.08_0802fd14.jpg" alt="Foto de Francisca" style="width: 200px; height: auto;">
+                    <img src="img/Imagem WhatsApp 2025-10-03 às 18.55.08_0802fd14.jpg">
                 </a>
             </div>
             <div class="gallery-item">
                 <a href="#img2">
-                    <img src=".img/Imagem WhatsApp 2025-10-03 às 18.55.08_dc6e0197.jpg">
+                    <img src="img/Imagem WhatsApp 2025-10-03 às 18.55.08_dc6e0197.jpg">
                 </a>
             </div>
             <div class="gallery-item">
