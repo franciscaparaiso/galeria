@@ -8,7 +8,7 @@
 
         body {
             font-family:Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #3d52af 0%, #351d4d 100%);
+            background-color:rebeccapurple;
             padding: 20px;
             min-height: 100vh;
         }
@@ -20,7 +20,7 @@
 
         h1 {
             text-align: center;
-            color: white;
+            color: rgb(16, 15, 15);
             margin-bottom: 30px;
             font-size: 2.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
